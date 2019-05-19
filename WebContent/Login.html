@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: rgb(1, 14, 86);
+	color: white;
+	text-align: center;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(1, 14, 86);
+	color: white;
+	text-align: center;
+}
+
+button {
+	background-color: rgb(1, 14, 86);
+	color: white;
+	padding: 14px 10px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+#button1 {
+	width: 100px;
+	height: 40px;
+}
+
+#button2 {
+	width: 100px;
+	height: 40px;
+}
+
+button:hover {
+	opacity: 0.2;
+}
+
+.container {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 39%;
+	top: 30%;
+}
+</style>
+</head>
+<body>
+	<form action="LoginServlet" method="get">
+		<div class="container">
+			<label for="uname"><b>Username</b></label><br> <input
+				type="text" placeholder="Enter Username" name="n1" required>
+			<label for="psw"><b>Password</b></label><br> <input
+				type="password" placeholder="Enter Password" name="n2" required>
+			<button type="submit" id="button1">Login</button>
+		</div>
+		<div class="header">
+			<h1>SRS BUSINESS SOLUTIONS</h1>
+		</div>
+		<div class="footer">
+			<h2>Employees Login Form</h2>
+		</div>
+	</form>
+</body>
+</html>  
